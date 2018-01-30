@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "hello-world"
+		},
+		{
+			"path": "leap"
 		}
 	],
 	"settings": {}

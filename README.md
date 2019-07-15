@@ -1,2 +1,2 @@
-# exercism
+# exercises
 exercises from exercism.io.

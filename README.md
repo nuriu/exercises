@@ -1,2 +1,3 @@
 # exercises
-exercises from exercism.io.
+
+> exercises from [exercism.io](https://exercism.io/profiles/nuriu).

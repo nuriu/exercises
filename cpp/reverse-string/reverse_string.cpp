@@ -1,16 +1,15 @@
 #include "reverse_string.h"
 
+#include <algorithm>
+
 namespace reverse_string
 {
     std::string reverse_string(std::string str)
     {
-        int length = str.length();
-
-        if(length < 1)
+        if(str.length() < 1)
             return "";
 
-        for (int i = 0; i < length / 2; ++i)
-            std::swap(str[i], str[length - i - 1]);
+        std::reverse(str.begin(), str.end());
 
         return str;
     }

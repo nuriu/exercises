@@ -10,8 +10,12 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{sh,ts,js,json,code-workspace}]
+[*.{sh,ts,js,json,lua,code-workspace}]
 indent_size = 2
 
-[*.{c,h}]
+[*.{c,h,cpp,hpp,cs,py,rs}]
+indent_size = 4
+
+[*.go]
+indent_style = tab
 indent_size = 4

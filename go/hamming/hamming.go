@@ -2,6 +2,7 @@ package hamming
 
 import "errors"
 
+// Distance calculates distance between two dna strands
 func Distance(a, b string) (int, error) {
 	ar, br := []rune(a), []rune(b)
 
@@ -10,7 +11,7 @@ func Distance(a, b string) (int, error) {
 	}
 
 	dist := 0
-	for i := 0; i < len(ar); i++ {
+	for i := range ar {
 		if ar[i] != br[i] {
 			dist++
 		}

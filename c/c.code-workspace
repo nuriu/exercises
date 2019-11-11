@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "hello-world"
+    },
+    {
+      "path": "armstrong-numbers"
+    },
+    {
+      "path": "gigasecond"
+    },
+    {
+      "path": "isogram"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "gigasecond"
+    },
+    {
+      "path": "hamming"
+    },
+    {
+      "path": "hello-world"
+    },
+    {
+      "path": "two-fer"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true
+    }
+  }
+}

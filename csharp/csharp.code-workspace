@@ -1,0 +1,50 @@
+{
+  "folders": [
+    {
+      "path": "bob"
+    },
+    {
+      "path": "difference-of-squares"
+    },
+    {
+      "path": "gigasecond"
+    },
+    {
+      "path": "grains"
+    },
+    {
+      "path": "hamming"
+    },
+    {
+      "path": "hello-world"
+    },
+    {
+      "path": "leap"
+    },
+    {
+      "path": "resistor-color"
+    },
+    {
+      "path": "reverse-string"
+    },
+    {
+      "path": "rna-transcription"
+    },
+    {
+      "path": "robot-name"
+    },
+    {
+      "path": "space-age"
+    },
+    {
+      "path": "two-fer"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true,
+      "**/bin": true,
+      "**/obj": true
+    }
+  }
+}

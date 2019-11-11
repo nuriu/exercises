@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "hello-world"
+    },
+    {
+      "path": "leap"
+    },
+    {
+      "path": "two-fer"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true,
+      "**/node_modules": true,
+      "**/*lock.json": true,
+      "**/.eslintrc": true,
+      "**/*config.js": true
+    }
+  }
+}

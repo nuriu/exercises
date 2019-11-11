@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "gigasecond"
+    },
+    {
+      "path": "hello-world"
+    },
+    {
+      "path": "leap"
+    },
+    {
+      "path": "reverse-string"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true
+    }
+  }
+}

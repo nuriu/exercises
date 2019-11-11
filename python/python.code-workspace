@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "path": "gigasecond"
+    },
+    {
+      "path": "hello-world"
+    },
+    {
+      "path": "leap"
+    },
+    {
+      "path": "reverse-string"
+    },
+    {
+      "path": "two-fer"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true,
+      "**/__pycache__": true,
+      "**/.pytest_cache/": true
+    }
+  }
+}

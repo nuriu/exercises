@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": "hello-world"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true
+    }
+  }
+}

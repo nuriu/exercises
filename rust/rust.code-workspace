@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "hello-world"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.exercism": true,
+      "**/Cargo.toml": true,
+      "**/.gitignore": true
+    }
+  }
+}

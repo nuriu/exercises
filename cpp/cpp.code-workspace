@@ -11,6 +11,9 @@
     },
     {
       "path": "reverse-string"
+    },
+    {
+      "path": "space-age"
     }
   ],
   "settings": {

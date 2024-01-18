@@ -12,7 +12,7 @@ public static class Bob
         SOMETHING_ELSE
     }
 
-    private static Dictionary<STATEMENT_TYPES, string> ANSWERS = new Dictionary<STATEMENT_TYPES, string>()
+    private static readonly Dictionary<STATEMENT_TYPES, string> ANSWERS = new Dictionary<STATEMENT_TYPES, string>()
     {
         {STATEMENT_TYPES.SILENCE, "Fine. Be that way!"},
         {STATEMENT_TYPES.YELLING, "Whoa, chill out!"},
@@ -21,10 +21,7 @@ public static class Bob
         {STATEMENT_TYPES.SOMETHING_ELSE, "Whatever."}
     };
 
-    public static string Response(string statement)
-    {
-        return ANSWERS[ClassificateStatement(statement)];
-    }
+    public static string Response(string statement) => ANSWERS[ClassificateStatement(statement)];
 
     private static STATEMENT_TYPES ClassificateStatement(string statement)
     {

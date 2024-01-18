@@ -1,9 +1,7 @@
-// This file was auto-generated based on version 1.1.0 of the canonical data.
-
 using System;
 using Xunit;
 
-public class GigasecondTest
+public class GigasecondTests
 {
     [Fact]
     public void Date_only_specification_of_time()

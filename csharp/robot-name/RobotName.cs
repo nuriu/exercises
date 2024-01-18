@@ -1,50 +1,21 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 public class Robot
 {
     private static readonly Random _random = new Random();
-    private static readonly List<string> _nameDatabase = new List<string>();
-    private string _currentName = null;
+    private static readonly HashSet<string> _nameDatabase = new HashSet<string>();
 
-    public string Name
-    {
-        get
-        {
-            if (_currentName == null)
-            {
-                GenerateName();
-            }
-            
-            return _currentName;
-        }
-    }
+    public string Name { get; private set; }
+
+    public Robot() => Reset();
 
     public void Reset()
     {
-        _nameDatabase.Remove(_currentName);
-
-        _currentName = null;
+        while (!_nameDatabase.Add(Name = GenerateName())) { };
     }
 
-    private void GenerateName()
-    {
-        do
-        {
-            _currentName = string.Concat(GetRandomLetter(), GetRandomLetter(), GetRandomDigit(), GetRandomDigit(), GetRandomDigit());
-        } while (_nameDatabase.Contains(_currentName));
-
-        _nameDatabase.Add(_currentName);
-    }
-
-    private char GetRandomLetter()
-    {
-        return (char)_random.Next((int)'A', (int)'Z' + 1);
-    }
-
-    private int GetRandomDigit()
-    {
-        return _random.Next(0, 10);
-    }
+    private string GenerateName() => $"{GetRandomLetter()}{GetRandomLetter()}{GetRandomDigit()}{GetRandomDigit()}{GetRandomDigit()}";
+    private char GetRandomLetter() => (char)_random.Next('A', 'Z' + 1);
+    private int GetRandomDigit() => _random.Next(0, 10);
 }

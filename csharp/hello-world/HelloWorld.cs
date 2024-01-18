@@ -1,9 +1,4 @@
-﻿using System;
-
 public static class HelloWorld
 {
-    public static string Hello()
-    {
-        return "Hello, World!";
-    }
+    public static string Hello() => "Hello, World!";
 }

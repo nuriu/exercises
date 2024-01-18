@@ -1,8 +1,6 @@
-// This file was auto-generated based on version 1.2.0 of the canonical data.
-
 using Xunit;
 
-public class SpaceAgeTest
+public class SpaceAgeTests
 {
     [Fact]
     public void Age_on_earth()

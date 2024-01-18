@@ -15,13 +15,7 @@ public static class ResistorColor
         "white"
     };
 
-    public static int ColorCode(string color)
-    {
-        return Array.FindIndex(_colors, cv => cv == color.ToLowerInvariant());
-    }
+    public static int ColorCode(string color) => Array.FindIndex(_colors, cv => cv == color.ToLowerInvariant());
 
-    public static string[] Colors()
-    {
-        return _colors;
-    }
+    public static string[] Colors() => _colors;
 }

@@ -1,11 +1,7 @@
-﻿using System;
+using System;
+using System.Linq;
 
 public static class ReverseString
 {
-    public static string Reverse(string input)
-    {
-        var inputArray = input.ToCharArray();
-        Array.Reverse(inputArray);
-        return new string(inputArray);
-    }
+    public static string Reverse(string input) => new string(input.Reverse().ToArray());
 }

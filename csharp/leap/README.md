@@ -1,39 +1,48 @@
 # Leap
 
-Given a year, report if it is a leap year.
+Welcome to Leap on Exercism's C# Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
 
-The tricky thing here is that a leap year in the Gregorian calendar occurs:
+## Introduction
 
-```plain
-on every year that is evenly divisible by 4
-  except every year that is evenly divisible by 100
-    unless the year is also evenly divisible by 400
-```
+A leap year (in the Gregorian calendar) occurs:
 
-For example, 1997 is not a leap year, but 1996 is.  1900 is not a leap
-year, but 2000 is.
+- In every year that is evenly divisible by 4
+- Unless the year is evenly divisible by 100, in which case it's only a leap year if the year is also evenly divisible by 400.
 
-If your language provides a method in the standard library that does
-this look-up, pretend it doesn't exist and implement it yourself.
+Some examples:
 
-## Notes
+- 1997 was not a leap year as it's not divisible by 4.
+- 1900 was not a leap year as it's not divisible by 400
+- 2000 was a leap year!
 
-Though our exercise adopts some very simple rules, there is more to
-learn!
+~~~~exercism/note
+For a delightful, four minute explanation of the whole phenomenon of leap years, check out [this youtube video](https://www.youtube.com/watch?v=xX96xng7sAE).
+~~~~
 
-For a delightful, four minute explanation of the whole leap year
-phenomenon, go watch [this youtube video][video].
+## Instructions
 
-[video]: http://www.youtube.com/watch?v=xX96xng7sAE
+Your task is to determine whether a given year is a leap year.
 
-### Submitting Exercises
+The DateTime class in C# provides a built-in [IsLeapYear](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.isleapyear)
+which you should pretend doesn't exist for the purposes of implementing this exercise.
 
-Note that, when trying to submit an exercise, make sure the exercise file that you're submitting is in the `exercism/csharp/<exerciseName>` directory.
-
-For example, if you're submitting `bob.cs` for the Bob exercise, the submit command would be something like `exercism submit <path_to_exercism_dir>/csharp/bob/bob.cs`.
 ## Source
 
-JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://www.javaranch.com/leap.jsp)
+### Created by
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+- @bressain
+
+### Contributed to by
+
+- @ErikSchierboom
+- @j2jensen
+- @jwood803
+- @kytrinyx
+- @NextNebula
+- @robkeim
+- @wolf99
+
+### Based on
+
+CodeRanch Cattle Drive, Assignment 3 - https://coderanch.com/t/718816/Leap
